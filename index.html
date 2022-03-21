@@ -13,18 +13,33 @@
     </head>
     <img src="https://static.dicionariodesimbolos.com.br/upload/60/81/conheca-o-significado-do-escudo-do-vasco-da-gama-5_xl.png" width="300" height="300"/>
     <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" method="post" autocomplete="on">
             <label for="inputName">Nome:</label>
             <input type="text" id="inputName" class="form-group" placeholder="Digite seu nome."/>
             <label for="inputSobrenome">Sobrenome:</label>
             <input type="text" id="inputSobrenome" class="form-group" placeholder="Digite seu sobrenome."/>
             <label for="inputEmail">Endereço de email.</label>
             <input type="text" id="inputEmail" class="form-group" placeholder="Digite seu email"/>
+            <label for="dayOfWeek">Digite um dia da semana:</label>
+            <input list="daysOfWeek" name="dayOfWeek" id="dayOfWeek">
+            <datalist id="daysOfWeek">
+                <option value="Segunda"></option>
+                <option value="Terça"></option>
+                <option value="Quarta"></option>
+                <option value="Quinta"></option>
+                <option value="Sexta"></option>
+                <option value="Sábado"></option>
+                <option value="Domingo"></option>
+            </datalist>
+            <hr/>
             <details>
                 <summary>PESQUISA DE UNIVERSIDADE</summary>
                 <label for="inputAnoUniversidade">Qual semestre você está cursando na faculdade?</label>
                 <input class="form-group"f type="number" min="0" max="10" id="inputAnoUniversidade"/>
             </details>
+<hr/>
+
+
               <button class="btn btn-lg btn-success btn-block" type="submit">Enviar</button>
 
 
